@@ -112,6 +112,19 @@ class panels_renderer_ipe extends panels_renderer_editor {
     return "<div id='panels-ipe-regionid-$region_id' class='panels-ipe-region'>$output</div>";
   }
 
+  function get_panels_storage_op_for_ajax($method) {
+    switch ($method) {
+      case 'ajax_unlock_ipe':
+      case 'ajax_save_form':
+        return 'update';
+      case 'ajax_change_layout':
+      case 'ajax_set_layout':
+        return 'change layout';
+    }
+
+    return parent::get_panels_storage_op_for_ajax($method);
+  }
+ 
   /**
    * AJAX entry point to create the controller form for an IPE.
    */
