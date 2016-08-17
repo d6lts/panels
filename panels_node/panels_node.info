@@ -4,3 +4,9 @@ package = "Panels"
 dependencies[] = panels
 core = 6.x
 
+
+; Information added by Drupal 6 LTS vendors on 2016-08-17
+version = "6.x-3.13"
+core = "6.x"
+project = "panels"
+datestamp = "1471436669"
