@@ -582,7 +582,6 @@ function panels_edit_layout($display, $finish, $destination = NULL, $allowed_lay
 
 /**
  * Forms the basis of a panel display
- *
  */
 class panels_display {
   var $args = array();
