@@ -3,9 +3,3 @@ description = Core Panels display functions; provides no external UI, at least o
 core = 6.x
 package = "Panels"
 dependencies[] = ctools
-
-; Information added by Drupal 6 LTS vendors on 2018-10-08
-version = "6.x-3.15"
-core = "6.x"
-project = "panels"
-datestamp = "1539022969"
