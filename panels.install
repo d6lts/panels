@@ -112,7 +112,7 @@ function panels_schema_4() {
 
   return $schema;
 }
- 
+
 /**
  * Schema that adds the panels_layout table.
  */
@@ -1255,7 +1255,7 @@ function panels_update_6302() {
         break;
       case 'node/add/%':
         // It seems nearly impossible to actually upgrade this properly.
-        continue;
+        continue 2;
       case 'node/%/edit':
         // Could we get conflicts here if they had both?
         $page->task = 'node_edit';
