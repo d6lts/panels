@@ -332,7 +332,7 @@ function panels_common_settings_submit($form, &$form_state) {
   variable_set($module_name . '_default', $form_state['values']['panels_common_default']);
   if (!$form_state['skip']) {
     // merge the broken apart array neatly back together
-    variable_set($module_name . '_allowed_types', call_user_func_array('array_merge', $form_state['values']['content_types']));
+    variable_set($module_name . '_allowed_types', call_user_func_array('array_merge', array_values($form_state['values']['content_types'])));
   }
   drupal_set_message(t('Your changes have been saved.'));
 }
